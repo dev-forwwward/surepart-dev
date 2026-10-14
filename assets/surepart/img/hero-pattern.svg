@@ -1,0 +1,9 @@
+<svg width="1437" height="900" viewBox="0 0 1437 900" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="m" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="358" y="93" width="714" height="714"><circle cx="715" cy="450" r="356.484" fill="#D9D9D9"/></mask>
+<g mask="url(#m)"><rect width="1440" height="900" fill="url(#p)" fill-opacity="0.2"/></g>
+<defs><pattern id="p" patternUnits="userSpaceOnUse" patternTransform="matrix(118.934 0 0 206 0 0)" preserveAspectRatio="none" viewBox="0 0 118.934 206" width="1" height="1">
+<use xlink:href="#pi" transform="translate(-118.934 0)"/>
+<g id="pi"><path d="M118.718 102.875H0.216797L59.4668 0.25L118.718 102.875Z" stroke="white" stroke-width="0.25"/></g>
+<use xlink:href="#pi" transform="translate(-59.4671 103)"/><use xlink:href="#pi" transform="translate(59.4671 103)"/>
+</pattern></defs>
+</svg>

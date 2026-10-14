@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+dist/
+build/
+*.map
+
+# Logs & env
+*.log
+.env
+.env.*
+
+# Caches
+.sass-cache/
+.cache/

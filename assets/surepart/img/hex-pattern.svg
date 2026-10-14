@@ -1,0 +1,8 @@
+<svg width="688" height="54" viewBox="0 0 688 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="688" height="54" fill="url(#p)"/>
+<defs><pattern id="p" patternUnits="userSpaceOnUse" patternTransform="matrix(10.3972 0 0 18.0085 0 0)" preserveAspectRatio="none" viewBox="0 0 10.3972 18.0085" width="1" height="1">
+<use xlink:href="#pi" transform="translate(-5.19861 -9.00425)"/><use xlink:href="#pi" transform="translate(5.19861 -9.00425)"/><use xlink:href="#pi" transform="translate(-10.3972 0)"/>
+<g id="pi"><path d="M9.96387 8.75391H0.433594L5.19824 0.499023L9.96387 8.75391Z" stroke="#E0E7F2" stroke-width="0.5"/></g>
+<use xlink:href="#pi" transform="translate(-5.19861 9.00425)"/><use xlink:href="#pi" transform="translate(5.19861 9.00425)"/>
+</pattern></defs>
+</svg>
