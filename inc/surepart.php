@@ -14,10 +14,19 @@ define( 'SUREPART_DIR', get_stylesheet_directory() . '/' );
 define( 'SUREPART_URI', get_stylesheet_directory_uri() . '/' );
 
 require_once SUREPART_DIR . 'inc/surepart-fields.php';
+require_once SUREPART_DIR . 'inc/surepart-content.php';
+require_once SUREPART_DIR . 'inc/surepart-contact.php';
+
+/**
+ * URL of a SurePart child page, e.g. surepart_page_url( 'about' ).
+ */
+function surepart_page_url( $slug = '' ) {
+	return home_url( '/surepart/' . ( $slug ? trailingslashit( $slug ) : '' ) );
+}
 
 /**
  * Is the current request a SurePart page?
- * Home is page-surepart.php; child pages will be added to this list.
+ * Home is page-surepart.php; child pages use the template-surepart-*.php templates.
  */
 function surepart_is_page() {
 	if ( ! is_page() ) {
@@ -90,22 +99,21 @@ add_action( 'after_setup_theme', function () {
  * Default links used until menus are assigned.
  */
 function surepart_default_links( $location ) {
-	$base = home_url( '/surepart/' );
 	$sets = array(
 		'surepart-primary'         => array(
-			'Price Confidence'        => $base . '#price-confidence',
-			'Estimate Accuracy'       => $base . '#estimate-accuracy',
-			'Operational Intelligence'=> $base . '#operational-intelligence',
-			'About Us'                => home_url( '/surepart/about/' ),
+			'Price Confidence'        => surepart_page_url( 'price-confidence' ),
+			'Estimate Accuracy'       => surepart_page_url( 'estimate-accuracy' ),
+			'Operational Intelligence'=> surepart_page_url( 'operational-intelligence' ),
+			'About Us'                => surepart_page_url( 'about' ),
 		),
 		'surepart-footer-platform' => array(
-			'Price Confidence'        => $base . '#price-confidence',
-			'Estimate Accuracy'       => $base . '#estimate-accuracy',
-			'Operational Intelligence'=> $base . '#operational-intelligence',
+			'Price Confidence'        => surepart_page_url( 'price-confidence' ),
+			'Estimate Accuracy'       => surepart_page_url( 'estimate-accuracy' ),
+			'Operational Intelligence'=> surepart_page_url( 'operational-intelligence' ),
 		),
 		'surepart-footer-company'  => array(
-			'About'          => home_url( '/surepart/about/' ),
-			'Contact'        => home_url( '/surepart/contact/' ),
+			'About'          => surepart_page_url( 'about' ),
+			'Contact'        => surepart_page_url( 'contact' ),
 			'Privacy Policy' => home_url( '/privacy-policy/' ),
 			'Terms'          => home_url( '/terms/' ),
 		),

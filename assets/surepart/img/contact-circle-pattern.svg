@@ -1,0 +1,21 @@
+<svg width="1436.32" height="1077.81" viewBox="0 0 1436.32 1077.81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Group 1000005066">
+<mask id="mask0_2350_6884" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="358" y="0" width="714" height="713">
+<circle id="Ellipse 93" cx="715" cy="356.484" r="356.484" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_2350_6884)">
+<g id="Frame 187">
+<rect width="1440" height="900" transform="translate(0 401.484)" fill="url(#pattern0_2350_6884)" fill-opacity="0.2"/>
+</g>
+</g>
+</g>
+<defs>
+<pattern id="pattern0_2350_6884" patternUnits="userSpaceOnUse" patternTransform="matrix(118.934 0 0 206 4.50227e-06 0)" preserveAspectRatio="none" viewBox="4.50227e-06 0 118.934 206" width="1" height="1">
+<use xlink:href="#pattern0_2350_6884_inner" transform="translate(-118.934 0)"/>
+<g id="pattern0_2350_6884_inner">
+<path id="Polygon 2" d="M118.718 102.875H0.216797L59.4668 0.25L118.718 102.875Z" stroke="white" stroke-width="0.25"/>
+</g>
+<use xlink:href="#pattern0_2350_6884_inner" transform="translate(-59.4671 103)"/>
+<use xlink:href="#pattern0_2350_6884_inner" transform="translate(59.4671 103)"/>
+</pattern></defs>
+</svg>

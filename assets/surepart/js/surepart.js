@@ -39,4 +39,27 @@
 			});
 		});
 	}
+
+	// About video: swap the poster for the oEmbed player on click
+	document.querySelectorAll('[data-sp-video]').forEach(function (box) {
+		var play = box.querySelector('[data-sp-video-play]');
+		var tpl = box.querySelector('template[data-sp-video-embed]');
+		if (!play || !tpl) return;
+		play.addEventListener('click', function () {
+			box.classList.add('is-playing');
+			box.appendChild(tpl.content.cloneNode(true));
+			var frame = box.querySelector('iframe');
+			if (frame) frame.focus();
+		});
+	});
+
+	// Contact form: submit label follows the enquiry type tab
+	document.querySelectorAll('[data-sp-form]').forEach(function (form) {
+		var submit = form.querySelector('[data-sp-submit]');
+		form.addEventListener('change', function (e) {
+			if (submit && e.target.name === 'sp_type') {
+				submit.textContent = e.target.getAttribute('data-sp-submit-label');
+			}
+		});
+	});
 })();
