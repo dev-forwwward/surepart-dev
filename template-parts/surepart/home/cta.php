@@ -9,6 +9,7 @@ $sub   = surepart_field( 'sp_cta_sub', "That's the SurePart advantage." );
 ?>
 <section class="sp-cta">
 	<img class="sp-cta__lines" src="<?php echo esc_url( surepart_img( 'lines-cta.svg' ) ); ?>" alt="" width="1196" height="438">
+	<img class="sp-cta__lines sp-cta__lines--mobile" src="<?php echo esc_url( surepart_img( 'cta-pattern-mobile.svg' ) ); ?>" alt="" width="503" height="485" loading="lazy">
 	<div class="sp-cta__inner">
 		<?php surepart_svg( 'cta-mark', 'sp-cta__mark' ); ?>
 		<h2 class="sp-h2 sp-cta__title">
