@@ -5,9 +5,9 @@
  */
 $label = surepart_field( 'sp_platform_label', 'The platform' );
 $cards = surepart_field( 'sp_platform_cards', array(
-	array( 'title' => 'Price Confidence', 'text' => "Understand the price you're likely to pay using real supplier-backed quotes and current inventory information.", 'url' => '' ),
-	array( 'title' => 'Estimate Accuracy', 'text' => 'Build estimates using validated pricing, available parts, and policy-compliant options.', 'url' => '' ),
-	array( 'title' => 'Operational Intelligence', 'text' => 'Build estimates using validated pricing, available parts, and policy-compliant options.', 'url' => '' ),
+	array( 'title' => 'Price Confidence', 'text' => "Understand the price you're likely to pay using real supplier-backed quotes and current inventory information.", 'url' => surepart_page_url( 'price-confidence' ) ),
+	array( 'title' => 'Estimate Accuracy', 'text' => 'Build estimates using validated pricing, available parts, and policy-compliant options.', 'url' => surepart_page_url( 'estimate-accuracy' ) ),
+	array( 'title' => 'Operational Intelligence', 'text' => 'Build estimates using validated pricing, available parts, and policy-compliant options.', 'url' => surepart_page_url( 'operational-intelligence' ) ),
 ) );
 $ids = array( 'price-confidence', 'estimate-accuracy', 'operational-intelligence' );
 ?>
